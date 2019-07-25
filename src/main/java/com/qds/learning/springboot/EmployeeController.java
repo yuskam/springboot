@@ -2,8 +2,7 @@ package com.qds.learning.springboot;
 
 import java.util.List;
 
-import javax.inject.Inject;
-
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -13,7 +12,7 @@ import com.qds.learning.springboot.service.EmployeeService;
 @RestController
 public class EmployeeController {
 
-	@Inject
+	@Autowired
 	private EmployeeService employeeService;
 
 	@RequestMapping("/employees/findAll")

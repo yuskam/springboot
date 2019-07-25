@@ -1,4 +1,4 @@
-package com.qds.learning.springboot.jersey;
+package com.qds.learning.springboot.jersey.model;
 
 import java.util.List;
 
