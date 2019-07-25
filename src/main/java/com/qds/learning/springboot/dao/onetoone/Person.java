@@ -1,35 +1,31 @@
-package com.qds.learning.springboot.dao.domain;
+package com.qds.learning.springboot.dao.onetoone;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.ManyToOne;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
 
 @Entity
-public class Item {
+public class Person {
 
 	@Id
 	@GeneratedValue
 	private long id;
 
-	@Column(name = "item_name")
+	@Column
 	private String name;
 
-	@ManyToOne
-	// @JoinColumn(name = "cart_id", nullable = false)
-	private Cart cart;
+	@OneToOne
+	@JoinColumn(name = "Account_id")
+	private Account account;
 
-	public Item() {
+	public Person() {
 	}
 
-	public Item(String name) {
+	public Person(String name) {
 		this.name = name;
-	}
-
-	public Item(String name, Cart cart) {
-		this.name = name;
-		this.cart = cart;
 	}
 
 	public long getId() {
@@ -48,12 +44,11 @@ public class Item {
 		this.name = name;
 	}
 
-	public Cart getCart() {
-		return cart;
+	public Account getAccount() {
+		return account;
 	}
 
-	public void setCart(Cart cart) {
-		this.cart = cart;
+	public void setAccount(Account account) {
+		this.account = account;
 	}
-
 }

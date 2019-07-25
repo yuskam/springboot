@@ -3,7 +3,7 @@
     <session-factory>
         <property name="hibernate.connection.driver_class">org.h2.Driver</property>
         <property name="hibernate.connection.url">
-          jdbc:h2:./spring_hibernate_one_to_many</property>
+          jdbc:h2:./test_hb_db</property>
         <property name="hibernate.connection.username">sa</property>
         <property name="hibernate.connection.password"></property>
 
@@ -11,7 +11,9 @@
         <property name="hibernate.current_session_context_class">thread</property>
         <property name="hibernate.show_sql">true</property>
         <property name="hibernate.hbm2ddl.auto">create-drop</property>
-        <mapping class ="com.qds.learning.springboot.dao.domain.Cart"/>
-        <mapping class ="com.qds.learning.springboot.dao.domain.Item"/>
+       
+       
+       <mapping class="com.qds.learning.springboot.dao.onetoone.Person"/>
+       <mapping class="com.qds.learning.springboot.dao.onetoone.Account"/>
     </session-factory>
 </hibernate-configuration>

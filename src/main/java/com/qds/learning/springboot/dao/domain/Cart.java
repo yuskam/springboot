@@ -19,6 +19,7 @@ public class Cart {
 
 	@OneToMany(mappedBy = "cart", cascade = { CascadeType.PERSIST,
 			CascadeType.REMOVE })
+	// @OneToMany
 	private Set<Item> items;
 
 	public long getId() {
