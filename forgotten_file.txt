@@ -1,0 +1,2 @@
+This file was forgotten while the last commit. 
+We will join it to that commit. For that we use 'git --amend'

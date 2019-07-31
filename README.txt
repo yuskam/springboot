@@ -1,6 +1,6 @@
 reference :
-https://github.com/eugenp/tutorials/tree/master/persistence-modules/hibernate-mapping
-
+ 	- https://github.com/eugenp/tutorials/tree/master/persistence-modules/hibernate-mapping
+    - Pro Git
 GIT :
 
 - Working Directory : contains any local modification. 
@@ -25,4 +25,8 @@ This option allows us to go back on the commits tree but we preserve local modif
 
 If we want to not preserve modifications of the reverted commits we can use : git reset --hard HEAD~n
 
+ 
+   
+
+-----  End of file ---------------
 
