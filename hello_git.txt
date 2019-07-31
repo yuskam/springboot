@@ -1,2 +1,2 @@
 Hello Git 
-Change it from GitHub
+Change it from GitHub.
