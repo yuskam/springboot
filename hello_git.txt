@@ -1,2 +1,3 @@
 Hello Git 
 Change it from GitHub.
+This line is added  on master branch. 
